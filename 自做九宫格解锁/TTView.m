@@ -47,18 +47,18 @@
     [self setNeedsDisplay];
 }
 //
--(void)test
-{
-    //    获取当前触摸点
-    UITouch *touch = [touch anyObject];
-    CGPoint currentPoint = [touch locationInView:touch.view];
-    for (UIButton *btn in self.subviews) {
-        if (CGRectContainsPoint(btn.frame, currentPoint)) {
-            btn.selected = YES;
-            [self.selectedBtns addObject:btn];
-        }}
-    [self setNeedsDisplay];
-}
+//-(void)test
+//{
+//    //    获取当前触摸点
+//    UITouch *touch = [touch anyObject];
+//    CGPoint currentPoint = [touch locationInView:touch.view];
+//    for (UIButton *btn in self.subviews) {
+//        if (CGRectContainsPoint(btn.frame, currentPoint)) {
+//            btn.selected = YES;
+//            [self.selectedBtns addObject:btn];
+//        }}
+//    [self setNeedsDisplay];
+//}
 //
 -(void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
